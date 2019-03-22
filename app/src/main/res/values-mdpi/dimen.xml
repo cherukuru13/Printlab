@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- To set mobile view to portrait only -->
+    <bool name="view_portrait_only">true</bool>
+
+
+    <dimen name="space_1dp">1dp</dimen>
+    <dimen name="space_2dp">2dp</dimen>
+    <dimen name="space_4dp">4dp</dimen>
+    <dimen name="space_8dp">8dp</dimen>
+    <dimen name="space_16dp">16dp</dimen>
+    <dimen name="space_32dp">32dp</dimen>
+
+    <!--delay is more for mdpi, hdpi devices-->
+    <integer name="events_fetch_delay">600</integer>
+
+    <string name="dip">mdpi</string>
+</resources>

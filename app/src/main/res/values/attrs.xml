@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--custom drop down text-->
+    <declare-styleable name="CustomDropDownTextView">
+        <attr name="dd_indicatorResId" format="reference" />
+        <attr name="dd_indicatorColor" format="color" />
+        <attr name="dd_textColor" format="color" />
+        <attr name="dd_backgroundColor" format="color" />
+        <attr name="dd_strokeWidth" format="dimension" />
+        <attr name="dd_strokeColor" format="color" />
+        <attr name="dd_cornerRadius" format="dimension" />
+        <attr name="dd_dropdownHeight" format="dimension" />
+        <attr name="dd_showByDefault" format="boolean" />
+        <attr name="dd_sizeWrap" format="boolean" />
+
+        <attr name="dd_maxItemsToShow" format="integer" />
+
+        <attr name="dd_itemBgColor" format="color" />
+        <attr name="dd_itemBgSelColor" format="color" />
+        <attr name="dd_itemHighlightColor" format="color" />
+        <attr name="dd_itemTextColor" format="color" />
+        <attr name="dd_itemTextSelColor" format="color" />
+        <attr name="dd_itemTextHighlightColor" format="color" />
+        <attr name="dd_itemTextSize" format="dimension" />
+        <attr name="dd_itemHeight" format="dimension" />
+        <attr name="dd_itemPadding" format="dimension" />
+
+        <attr name="dd_dividerColor" format="reference" />
+        <attr name="dd_dividerHeight" format="dimension" />
+
+        <attr name="dd_flag_alone_shown" format="boolean" />
+        <attr name="dd_hideDDTxt" format="boolean" />
+        <attr name="dd_showSelectedItem" format="boolean" />
+        <attr name="dd_txt_show_left_drawable" format="boolean" />
+        <attr name="dd_txt_with_all" format="boolean" />
+
+    </declare-styleable>
+
+</resources>

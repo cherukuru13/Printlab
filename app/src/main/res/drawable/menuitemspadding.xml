@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <!-- &lt;!&ndash; Specify a semi-transparent solid green background color &ndash;&gt;
+    <solid android:color="#5500FF66" />-->
+
+    <!-- Specify a dark green border -->
+
+    <bitmap android:src="@drawable/favourite"/>
+
+
+    <!-- Specify the margins that all content inside the drawable must adhere to -->
+    <margin
+        android:left="5dp"
+        />
+</shape>

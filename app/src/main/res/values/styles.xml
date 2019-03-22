@@ -1,0 +1,81 @@
+<resources>
+
+
+    <!-- base set of styles that apply to all versions -->
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="BaseAppTheme"/>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+
+    <!-- Base application theme. -->
+    <style name="AppThemeNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+    </style>
+
+
+    <style name="MyAlertDialog" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <!-- No backgrounds, titles or window float -->
+        <item name="android:windowBackground">@color/black_trans</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+
+    <style name="TextAppearance.Shrine.Logo" parent="TextAppearance.AppCompat.Display3">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="ErrorText" parent="TextAppearance.AppCompat">
+
+        <item name="android:textColor">@android:color/holo_red_dark</item>
+        <item name="android:textSize">18sp</item>
+
+    </style>
+
+
+    <style name="HintText" parent="TextAppearance.AppCompat">
+
+        <item name="android:textColor">@android:color/holo_blue_bright</item>
+        <item name="android:textSize">15sp</item>
+
+    </style>
+
+
+    <style name="TextInpuLayoutAppearance" parent="Widget.MaterialComponents.TextInputEditText.FilledBox">
+
+        <!-- reference our hint & error styles -->
+        <item name="hintTextAppearance">@style/HintText</item>
+        <item name="errorTextAppearance">@style/ErrorText</item>
+        <item name="android:textColor">@android:color/holo_purple</item>
+        <item name="android:textColorHint">@android:color/holo_green_light</item>
+        <item name="colorControlNormal">@android:color/primary_text_dark</item>
+        <item name="colorControlActivated">@android:color/holo_red_light</item>
+        <item name="colorControlHighlight">@android:color/background_dark</item>
+
+    </style>
+
+
+
+</resources>

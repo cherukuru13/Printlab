@@ -1,0 +1,194 @@
+<resources>
+    <string name="app_name">PrintLab</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+
+    <string name="action_settings">Settings</string>
+
+    <string name="sign_in">Continue</string>
+    <string name="sign_up">Continue</string>
+    <string name="hint_email">Email Address</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_address">Address</string>
+    <string name="hint_firstname">First Name</string>
+    <string name="hint_lastname">Last Name</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_phone">phone</string>
+    <string name="edit_profile">Edit Profile</string>
+
+    <string name="hint_text">Search Grocery for Delivery and Pickup</string>
+    <string name="hint_toolbar">2Hr Grocery</string>
+    <string name="text_category">SHOP BY CATEGORY</string>
+    <string name="text_orders">RECENT ORDERS</string>
+    <string name="text_sale">PRODUCTS ON SALE</string>
+    <string name="text_items">POPULAR ITEMS</string>
+    <string name="grocery">Grocery</string>
+    <string name="frozen">Frozen</string>
+    <string name="dairy">Dairy</string>
+    <string name="misc">Misc</string>
+    <string name="produce">Produce</string>
+    <string name="meat">Meat</string>
+    <string name="gingertext">Ginger Garlic Paste</string>
+    <string name="gingercost">2LB. $6.99</string>
+
+
+    <string name="hint_phone_number">(324) 242-2457</string>
+    <string name="hint_verification_code">Code</string>
+    <string name="start_phone_auth">NEXT STEP</string>
+    <string name="verify_phone_auth">NEXT STEP</string>
+    <string name="resend_phone_auth">Resend</string>
+    <string name="forget_password">Forgot Password</string>
+    <string name="new_here">New Here ?</string>
+    <string name="register_now">Register Now</string>
+    <string name="already_have_an_account">Already Have An Account ?</string>
+    <string name="login_now">Login Now</string>
+    <string name="phone_login">Continue with Phone</string>
+    <string name="facebookappid">457920684669717</string>
+    <string name="fblogin_protocol_scheme">fb457920684669717</string>
+    <string name="logface">Login</string>
+    <string name="logsucc">Successful</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="dinner">Dinner</string>
+    <string name="lunch">Lunch</string>
+
+    <string name="action_add_favourite">Add to Favourites</string>
+    <string name="action_play_next">Play Next</string>
+    <string name="backdrop_title">LOVE MUSIC</string>
+    <string name="backdrop_subtitle">This season top 20 albums</string>
+    <string name="Dinner">Dinner</string>
+    <string name="Lunch">Lunch</string>
+    <string name="Breakfast">Breakfast</string>
+    <string name="getstarted">GET STARTED</string>
+    <string name="favourite">Favourite</string>
+    <string name="cart">Cart</string>
+    <string name="your_number">Your Number</string>
+
+    <string name="emptyview">NO PRODUCTS AVAILABLE</string>
+    <string name="product">PRODUCT DETAILS</string>
+    <string name="gingerpaste">Ginger Garlic Paste</string>
+    <string name="brand">Brand : Lakshmi</string>
+    <string name="options">Available Options</string>
+    <string name="addcart">ADD TO CART</string>
+    <string name="addfav">ADD TO FAVORITE</string>
+    <string name="sampletext">Lakshmi garlic is an easy and convenient way to add garlic to any of your traditional
+        recipes.made from fresh and pure garlicUse as a 1 to 1 replacement for chopped garlic
+    </string>
+    <string name="delivery">DELIVERY ADDRESS</string>
+    <string name="deliverydatetime">DELIVERY DATE &amp; TIME</string>
+    <string name="paymentdetails">PAYMENT DETAILS</string>
+    <string name="ordersum">CONFIRMATION</string>
+    <string name="fav">FAVORITES</string>
+    <string name="creditcard">CREDIT CARD DETAILS</string>
+    <string name="paymentmethod">PAYMENT METHOD</string>
+    <string name="items">ITEMS IN THE CART</string>
+    <string name="confirm">CONFIRM YOUR DELIVERY ADDRESS</string>
+    <string name="checktext">Make this as default delivery address</string>
+    <string name="buttonconfirm">CONTINUE TO DELIVERY DATE &amp; TIME</string>
+    <string name="buttonpayment">CONTINUE TO PAYMENT</string>
+    <string name="buttonshopping">CONTINUE SHOPPING</string>
+    <string name="orderplace">PLACE THIS ORDER</string>
+    <string name="estdate">April 3rd 2018 8pm - 10pm</string>
+    <string name="credit">Credit Card</string>
+    <string name="custname">CUSTOMER NAME</string>
+    <string name="address">DELIVERY ADDRESS</string>
+    <string name="change">CHANGE</string>
+    <string name="cardnum">CARD NUMBER</string>
+    <string name="cardholder">Card Holder Name</string>
+    <string name="expire">EXPIRE DATE</string>
+    <string name="cvv">CVV</string>
+    <string name="save">SAVE CARD</string>
+    <string name="use">USE THIS CARD</string>
+    <string name="proceed">PROCEED TO COMPLETE</string>
+    <string name="thanks">THANK YOU</string>
+    <string name="est">Estimated Delivery</string>
+    <string name="content">Thank you for choosing 2Hr Grocery for your household needs. Your order will be processed
+        very soon and will be confirmed once the payment is successful.
+    </string>
+
+    <string name="profile">PROFILE</string>
+    <string name="name">Johnny Appleseed</string>
+    <string name="subname">Ellicott City, MD</string>
+    <string name="mail">Email &amp;</string>
+    <string name="phnum">Phone Number</string>
+    <string name="communication">Communication</string>
+    <string name="pref">Preference</string>
+    <string name="saved">Saved</string>
+    <string name="addr">Address</string>
+    <string name="chan">Change</string>
+    <string name="password">Password</string>
+    <string name="my">My</string>
+    <string name="orders">Orders</string>
+    <string name="pay">Payment</string>
+    <string name="emailphnum">Email &amp; Phone Number</string>
+    <string name="review">Please review and update your phone number and email address</string>
+    <string name="number">enter your mobile number</string>
+    <string name="email">enter your mail ID</string>
+    <string name="update">UPDATE</string>
+    <string name="cancel">CANCEL</string>
+    <string name="editpwd">CHANGE PASSWORD</string>
+    <string name="currentpwd">Current Password</string>
+    <string name="newpwd">New Password</string>
+    <string name="reenterpwd">Reenter New Password</string>
+    <string name="communicationpref">COMMUNICATION PREFERENCE</string>
+    <string name="deliveryaddr">Enter your delivery address</string>
+    <string name="consent">Consent to email and SMS notification</string>
+    <string name="allowcheck">Allow SMS for Delivery Notifications</string>
+    <string name="allowcheckcpy">Allow Email for Delivery Notifications</string>
+    <string name="savedaddr">SAVED ADDRESS</string>
+    <string name="updateaddress">SAVED ADDRESS</string>
+    <string name="makedefault">MAKE THIS DEFAULT</string>
+    <string name="makedef">Make this default</string>
+    <string name="addr1">567 Watal Ave,</string>
+    <string name="addr2">Owings Mills, MD 21117</string>
+    <string name="addrline">Address Line 1</string>
+    <string name="apt">Apt,Suite,Unit,Floor,Etc</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="zip">ZIP</string>
+    <string name="country">Country</string>
+    <string name="orderst">ORDER STATUS</string>
+    <string name="orderdt">ORDER DETAIL</string>
+    <string name="orderid">Order ID :</string>
+    <string name="ordertotal">Order Total :</string>
+    <string name="date">3/27 2:45PM</string>
+    <string name="deliverydate">Deliver by</string>
+    <string name="payappr">Payment Approved</string>
+    <string name="dt">DATE &amp; TIME</string>
+    <string name="total">TOTAL</string>
+    <string name="status">STATUS</string>
+    <string name="orddetails">ORDER DETAILS</string>
+    <string name="ordtotal">ORDER TOTAL:</string>
+    <string name="shopping">SHOPPING CART</string>
+    <string name="groc">Grocery</string>
+    <string name="search">Search</string>
+    <string name="emp">Empty Cart</string>
+    <string name="visacard">Visacard</string>
+    <string name="addcard">Add a card</string>
+    <string name="store_pick_up">STORE PICKUP</string>
+    <string name="select_your_option">SELECT YOUR OPTION</string>
+    <string name="valid">Form is valid</string>
+    <string name="invalid">Form is invalid</string>
+    <string name="zipcodetext">Lets first check if we deliver to your location. Enter your Zipcode</string>
+    <string name="zc">ZIPCODE</string>
+    <string name="check">CHECK</string>
+    <string name="samp">JUST FOR MOCKUP - INVALID ZIP FLOW</string>
+    <string name="news">Great News!</string>
+    <string name="dodeliv">We do deliver to your location.</string>
+    <string name="createacc">Please create an account with one of the following options</string>
+    <string name="failure">We do not deliver to your location at this point. We are working hard to expand to new
+        locations very soon.
+    </string>
+    <string name="advice">We will let you know once the service is available in your area</string>
+    <string name="eme">Email me</string>
+    <string name="txtme">Text me</string>
+    <string name="cont">CONTINUE</string>
+    <string name="elg">Your order eligible for free shipping</string>
+    <string name="hrdeliv">Add $4.04 for Free 2 hour delivery</string>
+    <string name="fee">Delivery fee applies</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

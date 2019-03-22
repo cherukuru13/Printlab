@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- To set tablet view to both portrait & landscape -->
+    <bool name="view_portrait_only">false</bool>
+
+
+
+    <!--(mdpi * 2)-->
+    <dimen name="space_1dp">1dp</dimen>
+    <dimen name="space_2dp">3dp</dimen>
+    <dimen name="space_4dp">6dp</dimen>
+    <dimen name="space_8dp">12dp</dimen>
+    <dimen name="space_16dp">22dp</dimen>
+    <dimen name="space_32dp">44dp</dimen>
+
+    <string name="dip">sw600dp</string>
+
+
+</resources>

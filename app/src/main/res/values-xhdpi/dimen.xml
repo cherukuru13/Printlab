@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="space_1dp">1dp</dimen>
+    <dimen name="space_2dp">3dp</dimen>
+    <dimen name="space_4dp">5dp</dimen>
+    <dimen name="space_8dp">9dp</dimen>
+    <dimen name="space_16dp">17dp</dimen>
+    <dimen name="space_32dp">34dp</dimen>
+
+    <!--delay is more for mdpi, hdpi devices-->
+    <integer name="events_fetch_delay">400</integer>
+
+    <string name="dip">xhdpi</string>
+
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--(mdpi*2) - 2-->
+    <dimen name="txt_tiny">14sp</dimen>
+    <dimen name="txt_x_small">16sp</dimen>
+    <dimen name="txt_small">28sp</dimen>
+    <dimen name="txt_x_regular">26sp</dimen>
+    <dimen name="txt_regular">30sp</dimen>
+    <dimen name="txt_medium">38sp</dimen>
+    <dimen name="txt_large">46sp</dimen>
+</resources>

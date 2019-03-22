@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <!--(mdpi * 2) + 2-->
+    <dimen name="space_1dp">1dp</dimen>
+    <dimen name="space_2dp">5dp</dimen>
+    <dimen name="space_4dp">8dp</dimen>
+    <dimen name="space_8dp">14dp</dimen>
+    <dimen name="space_16dp">22dp</dimen>
+    <dimen name="space_32dp">44dp</dimen>
+
+
+    <integer name="events_fetch_delay">500</integer>
+
+    <string name="dip">sw600dp-xhdpi</string>
+
+</resources>
