@@ -1,21 +1,18 @@
 package com.printlab.android.activities
 
 import android.os.Bundle
-import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
 import android.support.v4.app.Fragment
 import android.support.v4.view.GravityCompat
-import android.support.v4.view.ViewCompat
 import android.support.v7.app.ActionBarDrawerToggle
-import android.transition.TransitionManager
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.ExpandableListView
 import com.printlab.android.R
+import com.printlab.android.fragments.LandingScreen
 import com.printlab.android.model.NavChildModel
 import com.printlab.android.model.NavHeaderModel
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.app_bar_main.*
 import kotlinx.android.synthetic.main.toolbar.*
 
 class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -37,11 +34,11 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
 
         }
 
-        val mChildBusinesslList = ArrayList<NavChildModel>()
-        mChildBusinesslList.add(NavChildModel("Standard Business Card"))
-        mChildBusinesslList.add(NavChildModel("Froasted Business Card"))
-        mChildBusinesslList.add(NavChildModel("Die Cut Business Card"))
-        mChildBusinesslList.add(NavChildModel("Express Business Card"))
+        val mChildBusinessList = ArrayList<NavChildModel>()
+        mChildBusinessList.add(NavChildModel("Standard Business Card"))
+        mChildBusinessList.add(NavChildModel("Froasted Business Card"))
+        mChildBusinessList.add(NavChildModel("Die Cut Business Card"))
+        mChildBusinessList.add(NavChildModel("Express Business Card"))
 
         navExpListView
             .init()
@@ -53,7 +50,7 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
                     false,
                     true,
                     false,
-                    mChildBusinesslList
+                    mChildBusinessList
                 )
             )
             .addHeaderModel(
@@ -102,13 +99,17 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
         }
         setToggleBar()
 
-
-//        TransitionManager.beginDelayedTransition(transitionsContainer)
-//        visible = !visible
-//        text.visibility = if (visible) View.VISIBLE else View.GONE
-
+        setContainerFrag(LandingScreen(), LandingScreen.tag)
     }
 
+
+    private fun setContainerFrag(fragment: Fragment?, tag: String? = null) {
+
+
+        supportFragmentManager.beginTransaction().replace(R.id.activity_main_container, fragment!!, tag!!)
+            .addToBackStack(null).commit()
+
+    }
 
     override fun onAttachFragment(fragment: Fragment?) {
         super.onAttachFragment(fragment)

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.customer.com.twohrgrocery.customer.ZipcodeSuccess">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp"
+        android:layout_margin="35dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/cart"/>
+
+            <TextView
+                android:id="@+id/ziptext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="@string/hint_toolbar"
+                android:layout_marginLeft="4dp"
+                android:textColor="#3497FD"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="@string/news"
+        android:textColor="#20AC40"
+        android:textSize="24dp"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="@string/dodeliv"
+        android:textColor="#20AC40"
+        android:textSize="24dp"
+        android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="@string/createacc"
+            android:textColor="#959DAD"
+            android:textSize="24dp"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/btn_email"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_button"
+            android:layout_height="wrap_content"
+            android:text="EMAIL"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+
+
+        <Button
+            android:id="@+id/btn_phno"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners_btn"
+            android:layout_height="wrap_content"
+            android:text="PHONE NUMBER"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/fb_login"
+            android:background="@drawable/rounded_button"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content"
+            android:padding="50dp"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

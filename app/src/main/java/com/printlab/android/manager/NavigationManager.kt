@@ -1,7 +1,10 @@
+@file:Suppress("NAME_SHADOWING")
+
 package com.printlab.android.manager
 
 import android.app.Activity
 import android.content.ActivityNotFoundException
+import android.content.Context
 import android.content.Intent
 import android.os.Build
 import android.support.v4.content.FileProvider
@@ -9,6 +12,33 @@ import android.widget.Toast
 import java.io.File
 
 object NavigationManager {
+
+
+//    fun goToNextActivity(context: Any, T::cl ) {
+//
+//        val activity = context as Activity
+//
+//
+//        activity.startActivity(Intent(activity, class))
+//
+//
+//    }
+
+    inline fun <reified T : Activity> start(context: Any) {
+        val context = context as Activity
+        val intent = Intent(context, T::class.java)
+        context.startActivity(intent)
+    }
+
+    fun setAction(context: Any, action: String) {
+
+        val context = context as Activity
+
+        val intent = Intent(action)
+        context.startActivity(intent)
+
+
+    }
 
     /*fun goTracksActivity(activity: Activity?, seriesObj: SeriesObj) {
         if (activity == null) return

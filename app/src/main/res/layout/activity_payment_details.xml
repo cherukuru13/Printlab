@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.customer.com.twohrgrocery.customer.PaymentDetails">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_semibold"
+                android:padding="15dp"
+                android:text="@string/paymentdetails"
+                android:textSize="16sp"
+                android:textColor="@color/RiverBed" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/orucolor"
+                    android:layout_weight="1"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/DodgerBlue"
+                    android:layout_weight="1"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/DodgerBlue"
+                    android:layout_weight="1"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/CornflowerBlue"
+                    android:layout_weight="1"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/white"
+                    android:layout_weight="0.5"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:orientation="vertical"
+            android:background="@drawable/gradientbackground">
+
+            <TextView
+                android:id="@+id/paydt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="@string/custname"
+                android:layout_margin="5dp"/>
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/customerNameDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#454F63"
+                android:background="@drawable/cornerscopy"
+                android:inputType="textMultiLine|textVisiblePassword"
+                android:layout_marginTop="1dp"
+                android:padding="10dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/text_storepickups"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:text="@string/address"
+                    android:layout_margin="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="0.5"/>
+
+                <TextView
+                    android:id="@+id/changedeliveryAddressDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:text="@string/change"
+                    android:textColor="#3497FD"
+                    android:layout_margin="8dp"/>
+
+            </LinearLayout>
+
+            <EditText
+
+                android:id="@+id/deliveryAddressDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#454F63"
+                android:background="@drawable/cornerscopy"
+                android:inputType="textMultiLine|textVisiblePassword"
+                android:layout_marginTop="1dp"
+                android:maxLines="6"
+                android:maxLength="100"
+                android:padding="8dp"/>
+
+
+            <LinearLayout
+                android:id="@+id/deliveryDateTimelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:text="@string/deliverydatetime"
+                    android:layout_margin="8dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="0.5"/>
+
+                <TextView
+                    android:id="@+id/changesdeliveryDateTimeDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:text="@string/change"
+                    android:textColor="#3497FD"
+                    android:layout_margin="8dp"/>
+
+            </LinearLayout>
+
+            <EditText
+
+                android:id="@+id/deliveryDateTimeDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#454F63"
+                android:background="@drawable/cornerscopy"
+                android:inputType="textMultiLine|textVisiblePassword"
+                android:layout_marginTop="1dp"
+                android:padding="10dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="@string/paymentmethod"
+                android:layout_margin="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:background="@drawable/corners_cpy_cpy">
+
+                <ListView
+                    android:id="@+id/list_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"
+                    android:dividerHeight="-14dp"
+                    android:nestedScrollingEnabled="true">
+
+                </ListView>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:id="@+id/btn_proceed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/rounded_button_cart"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="@string/proceed"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

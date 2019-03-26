@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/songs_count_padding_bottom" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.4"
+            android:background="#EAEEF0">
+
+
+            <TextView
+                android:id="@+id/unitOS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:layout_marginLeft="6dp"
+                android:gravity="left"
+                android:textColor="#3497FD"
+                android:textSize="14sp"
+                android:text=""
+                app:fontFamily="@font/open_sans" />
+
+            <TextView
+                android:id="@+id/priceOS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="left"
+                android:layout_marginRight="6dp"
+                android:textColor="#3497FD"
+                android:textSize="14sp"
+                android:text=""
+                app:fontFamily="@font/open_sans" />
+
+            <TextView
+                android:id="@+id/cart_countOS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_weight="0.2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="14sp"
+                android:text=""
+                android:gravity="left"
+                app:fontFamily="@font/open_sans" />
+
+            <TextView
+
+                android:id="@+id/total_countOS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:layout_marginRight="6dp"
+                android:textColor="#3497FD"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text=""
+                app:fontFamily="@font/open_sans" />
+
+
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.4"
+            android:weightSum="3"
+            android:layout_gravity="right">
+
+            <ImageView
+                android:id="@+id/add"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:background="@drawable/ic_add" />
+
+            <TextView
+                android:id="@+id/cart_count"
+                android:layout_width="50dp"
+                android:layout_gravity="center"
+                android:layout_height="40dp"
+                android:background="@drawable/textview_border"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="3dp"
+                android:textSize="16sp"
+                app:fontFamily="@font/open_sans" />
+
+            <ImageView
+                android:id="@+id/sub"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:background="@drawable/ic_sub" />
+
+        </LinearLayout>-->
+    </LinearLayout>
+</LinearLayout>

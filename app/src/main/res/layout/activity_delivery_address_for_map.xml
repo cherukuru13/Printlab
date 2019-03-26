@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Delivery Address"
+        android:textStyle="bold"
+        android:id="@+id/addressText"
+        android:layout_marginTop="20dp"
+        app:fontFamily="@font/open_sans_bold"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/addressText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchLayout"
+        android:background="#EAEEF0"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+<!--
+        <fragment
+            android:id="@+id/place_autocomplete_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EAEEF0"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            android:drawableLeft="@drawable/map"
+            android:drawablePadding="25dp"/>
+-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/searchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/locLayout"
+        android:background="#EAEEF0">
+        <TextView
+            android:id="@+id/detect_my_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:fontFamily="@font/open_sans"
+            android:drawableLeft="@drawable/find_location"
+            android:drawablePadding="25dp"
+            android:ems="10"
+            android:textSize="14sp"
+            android:text="Detect My Location" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VERIFY"
+        app:fontFamily="@font/open_sans"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/white" />
+</RelativeLayout>

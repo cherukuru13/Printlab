@@ -10,78 +10,88 @@
         tools:showIn="@layout/app_bar_main"
         tools:context=".activities.MainActivity">
 
-    <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="?attr/actionBarSize"
-            android:orientation="vertical"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:paddingTop="60dp">
-        <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:theme="@style/TextInpuLayoutAppearance"
-                android:layout_height="wrap_content">
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:id="@+id/activity_main_container"
+            android:layout_height="match_parent">
 
-            <android.support.design.widget.TextInputEditText
+    </FrameLayout>
+
+    <!--
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="60dp">
+            <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
-                    android:inputType="textEmailAddress"
-                    android:hint="test"
-                    android:layout_height="wrap_content"/>
+                    android:theme="@style/TextInpuLayoutAppearance"
+                    android:layout_height="wrap_content">
 
-        </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:inputType="textEmailAddress"
+                        android:hint="test"
+                        android:layout_height="wrap_content"/>
 
-        <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+            </android.support.design.widget.TextInputLayout>
 
-            <android.support.design.widget.TextInputEditText
+            <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
-                    android:inputType="textEmailAddress"
-                    android:hint="test"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content">
 
-        </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:inputType="textEmailAddress"
+                        android:hint="test"
+                        android:layout_height="wrap_content"/>
 
-        <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                app:errorEnabled="false"
-                app:helperText="prasad"
-                android:background="@color/colorPrimary"
-                android:layout_height="wrap_content">
+            </android.support.design.widget.TextInputLayout>
 
-            <android.support.design.widget.TextInputEditText
+            <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
-                    android:inputType="textEmailAddress"
-                    android:hint="test"
-                    android:layout_height="wrap_content"/>
+                    app:errorEnabled="false"
+                    app:helperText="prasad"
+                    android:background="@color/colorPrimary"
+                    android:layout_height="wrap_content">
 
-        </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:inputType="textEmailAddress"
+                        android:hint="test"
+                        android:layout_height="wrap_content"/>
 
-        <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:background="@color/colorPrimary"
-                android:layout_height="wrap_content">
+            </android.support.design.widget.TextInputLayout>
 
-            <android.support.design.widget.TextInputEditText
+            <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
-                    android:inputType="textEmailAddress"
-                    android:hint="test"
-                    android:layout_height="wrap_content"/>
+                    android:background="@color/colorPrimary"
+                    android:layout_height="wrap_content">
 
-        </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:inputType="textEmailAddress"
+                        android:hint="test"
+                        android:layout_height="wrap_content"/>
 
-    </LinearLayout>
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
 
 
-    <com.pnikosis.materialishprogress.ProgressWheel
-            android:id="@+id/progress_wheel"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            wheel:matProg_barColor="#5588FF"
-            wheel:matProg_progressIndeterminate="true"
-            wheel:matProg_fillRadius="true"/>
+
+        <com.pnikosis.materialishprogress.ProgressWheel
+                android:id="@+id/progress_wheel"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                wheel:matProg_barColor="#5588FF"
+                wheel:matProg_progressIndeterminate="true"
+                wheel:matProg_fillRadius="true"/>
+                -->
 
 </android.support.constraint.ConstraintLayout>

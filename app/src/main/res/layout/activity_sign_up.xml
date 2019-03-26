@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.customer.com.twohrgrocery.customer.SignUpActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:clickable="false"
+    android:id="@+id/noID"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SIGN UP"
+                android:layout_marginLeft="50dp"
+                android:background="@color/white"
+                android:textSize="18sp"
+                android:padding="8dp"
+                app:fontFamily="@font/open_sans"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/orucolor"
+                    android:layout_weight="1"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/DodgerBlue"
+                    android:layout_weight="1"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/DodgerBlue"
+                    android:layout_weight="1"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/CornflowerBlue"
+                    android:layout_weight="1"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/white"
+                    android:layout_weight="0.5"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/layout_email_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittextborder"
+            android:hint="@string/hint_firstname"
+            android:inputType="textMultiLine|textVisiblePassword"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:textSize="18sp"
+            android:padding="14dp" />
+
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittextborder"
+            android:layout_marginTop="2dp"
+            android:hint="@string/hint_lastname"
+            android:inputType="textMultiLine|textVisiblePassword"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:textSize="18sp"
+            android:padding="14dp" />
+
+        <EditText
+            android:id="@+id/field_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittextborder"
+            android:layout_marginTop="2dp"
+            android:hint="@string/hint_email"
+            android:inputType="textMultiLine|textVisiblePassword"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:textSize="18sp"
+            android:padding="14dp" />
+
+        <EditText
+            android:id="@+id/field_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittextborder"
+            android:layout_marginTop="2dp"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:textSize="18sp"
+            android:padding="14dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_email_password"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <!--<Button
+            android:id="@+id/button_sign_up"
+            android:layout_width="match_parent"
+            android:background="@drawable/rounded_button"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:fontFamily="@font/open_sans"
+            android:textColor="#ffffff"
+            android:text="@string/sign_up" />-->
+        <Button
+            android:id="@+id/button_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button_cart"
+            android:layout_gravity="center"
+            android:text="@string/cont"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+</FrameLayout>
+
+</ScrollView>

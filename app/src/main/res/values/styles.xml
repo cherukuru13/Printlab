@@ -8,17 +8,26 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="BaseAppTheme"/>
+    <style name="AppTheme" parent="BaseAppTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:minWidth">0dp</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
 
-
-    <style name="AppTheme.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
     </style>
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 
+    <!-- &lt;!&ndash; Base application theme. &ndash;&gt;
+     <style name="AppTheme" parent="BaseAppTheme"/>
+
+
+     <style name="AppTheme.NoActionBar">
+         <item name="windowActionBar">false</item>
+         <item name="windowNoTitle">true</item>
+     </style>
+     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+ -->
 
     <!-- Base application theme. -->
     <style name="AppThemeNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
@@ -77,5 +86,82 @@
     </style>
 
 
+    <style name="AppTheme.ActionBar">
+        <item name="windowActionBar">true</item>An
+        <item name="windowNoTitle">true</item>
+
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:minWidth">0dp</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="android:drawable">@drawable/ic_menu_manage</item>
+        <item name="color">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">#fff</item>
+        <item name="android:textSize">20sp</item>
+
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="colorControlNormal">@color/RiverBed</item>
+        <item name="colorControlActivated">@color/RiverBed</item>
+
+    </style>
+
+    <style name="CardWidgetStyle" parent="@android:style/Theme.DeviceDefault">
+        <item name="android:background">#fff</item>
+        <item name="editTextStyle">@style/EditTextOverride</item>
+        <item name="android:editTextStyle">@style/EditTextOverride</item>
+    </style>
+
+    <style name="EditTextOverride" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textColorHint">#11ff00</item>
+    </style>
+
+    <style name="HLitViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">250dp</item>
+        <!-- not namespace prefix -->
+        <item name="item_width">160dp</item>
+        <item name="item_height">200dp</item>
+        <item name="spacing">10dp</item>
+        <!-- <item name="gravity">center</item>
+         <item name="bg_color">#323232</item>
+         <item name="left_offset">130dp</item>
+         <item name="right_offset">130dp</item>-->
+    </style>
+
+    <style name="ActionBarTabStyle" parent="@android:style/Widget.Holo.ActionBar.TabView">
+        <item name="android:background">@android:color/transparent</item>
+
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+    </style>
+    <!-- style for Action Bar -->
+
+
+    <style name="toolBarheader">
+        <item name="android:background">#303F9F</item>
+    </style>
 
 </resources>

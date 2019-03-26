@@ -49,7 +49,7 @@ public class ActiveInternetTask extends AsyncTask<Void, Void, Boolean> {
         super.onPostExecute(aBoolean);
         Logg.v(TAG, "ActiveInternetTask isCancelled -> " + isCancelled());
 
-        BaseActivity.lastInternetState = aBoolean ? BaseActivity.INTERNET_STATE_ACTIVE : BaseActivity.INTERNET_STATE_INACTIVE;
+        BaseActivity.Companion.setLastInternetState(aBoolean ? BaseActivity.Companion.getINTERNET_STATE_ACTIVE() : BaseActivity.Companion.getINTERNET_STATE_INACTIVE());
         if (!isCancelled()) mCallback.OnNetworkChanged(aBoolean);
     }
 

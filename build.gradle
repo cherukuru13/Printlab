@@ -3,8 +3,30 @@
 buildscript {
 
 
+    ext{
 
-    ext.kotlin_version = '1.3.21'
+        applicationId = "com.printlab.android"
+        kotlin_version = '1.3.21'
+        versionName = "1.0"
+        versionCode = 1
+        minSdkVersion = 19
+        targetSdkVersion = 28
+        compileSdkVersion = 28
+        buildToolsVersion = "28.0.3"
+        androidxVersion = "1.0.0"
+        materialVersion = "1.0.0"
+        constraintVersion = "2.0.0-alpha3"
+        retrofitVersion = "2.3.0"
+        glideVersion = "4.8.0"
+        glideTransformationVersion = "3.0.1"
+        multiDexVersion = "1.0.3"
+        gsonVersion = "2.8.5"
+        volleyVersion = "1.1.1"
+        materialProgressVersion = "1.7"
+        hbb20 = "2.1.9"
+        fbSdkVersion ="4.35.0"
+
+    }
     repositories {
         google()
         jcenter()
