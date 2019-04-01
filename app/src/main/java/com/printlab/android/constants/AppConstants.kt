@@ -24,5 +24,20 @@ object AppConstants {
     }
 
 
+    object UserDetails {
+
+        const val USER_NAME = "username_print_lab"
+
+        const val PASSWORD = "password_print_lab"
+
+    }
+
+    object FragBundleKeys {
+
+        const val FRAG_PRODUCT_DETAILS = "product_details_frag"
+
+
+    }
+
 
 }

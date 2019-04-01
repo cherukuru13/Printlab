@@ -7,15 +7,20 @@ import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import android.widget.ExpandableListView
 import com.printlab.android.R
+import com.printlab.android.fragments.FavouriteListFrag
 import com.printlab.android.fragments.LandingScreen
+import com.printlab.android.fragments.ShoppingCartFrag
+import com.printlab.android.model.CartProductsModel
 import com.printlab.android.model.NavChildModel
 import com.printlab.android.model.NavHeaderModel
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.toolbar.*
 
-class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedListener {
+class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -100,11 +105,17 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
         setToggleBar()
 
         setContainerFrag(LandingScreen(), LandingScreen.tag)
+        setClickEvents()
     }
 
+    private fun setClickEvents() {
 
-    private fun setContainerFrag(fragment: Fragment?, tag: String? = null) {
+        action_cart.setOnClickListener(this)
+        action_favorite.setOnClickListener(this)
 
+    }
+
+    fun setContainerFrag(fragment: Fragment?, tag: String? = null) {
 
         supportFragmentManager.beginTransaction().replace(R.id.activity_main_container, fragment!!, tag!!)
             .addToBackStack(null).commit()
@@ -193,4 +204,28 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
         drawer_layout.closeDrawer(GravityCompat.START)
         return true
     }
+
+    override fun onClick(v: View?) {
+
+        // Handle click events
+        when (v!!.id) {
+
+            R.id.action_cart -> {
+
+                if (CartProductsModel.getCartProductsList().size > 0)
+                    setContainerFrag(ShoppingCartFrag(), ShoppingCartFrag.tag)
+
+            }
+
+            R.id.action_favorite -> {
+
+                setContainerFrag(FavouriteListFrag(), FavouriteListFrag.mTag)
+
+            }
+
+
+        }
+
+    }
+
 }

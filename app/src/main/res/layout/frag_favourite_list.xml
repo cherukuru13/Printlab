@@ -92,6 +92,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
+                android:focusable="false"
                 android:background="@drawable/searchviewbackground"
                 android:drawableLeft="@drawable/ic_search"
                 android:fontFamily="@font/open_sans_semibold"
@@ -110,12 +111,12 @@
             android:layout_margin="5dp"
             android:orientation="vertical">
 
-            <ListView
+            <android.support.v7.widget.RecyclerView
                 android:id="@+id/list_favorites"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-            </ListView>
+            </android.support.v7.widget.RecyclerView>
             <TextView
                 android:id="@+id/emptyView_fav"
                 android:layout_width="wrap_content"

@@ -22,6 +22,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:focusable="false"
+                    android:autofillHints="@string/action_add_favourite"
                     android:background="@drawable/searchviewbackground"
                     android:drawableLeft="@drawable/ic_search"
                     android:drawablePadding="10dp"

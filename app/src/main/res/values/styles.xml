@@ -72,9 +72,10 @@
     </style>
 
 
+<!--
     <style name="TextInpuLayoutAppearance" parent="Widget.MaterialComponents.TextInputEditText.FilledBox">
 
-        <!-- reference our hint & error styles -->
+        &lt;!&ndash; reference our hint & error styles &ndash;&gt;
         <item name="hintTextAppearance">@style/HintText</item>
         <item name="errorTextAppearance">@style/ErrorText</item>
         <item name="android:textColor">@android:color/holo_purple</item>
@@ -84,6 +85,7 @@
         <item name="colorControlHighlight">@android:color/background_dark</item>
 
     </style>
+-->
 
 
     <style name="AppTheme.ActionBar">

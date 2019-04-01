@@ -4,7 +4,7 @@ import android.view.View
 import android.view.ViewGroup
 
 /**
- * Created by Arun Shankar on 20/02/18.
+ *
  */
 object DesignManager {
 

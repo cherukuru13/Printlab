@@ -5,16 +5,19 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.support.v4.content.ContextCompat
 import com.printlab.android.R
 import kotlinx.android.synthetic.main.adapter_productforsale.view.*
 
+
 import com.printlab.android.listeners.OnRecyclerItemClick
+import com.printlab.android.model.GroceryModel
 
 
 class RecentProductsAdapter(
     var context: Context,
     var listType: String,
-    var mList: ArrayList<Any>,
+    private var mList: ArrayList<Any>,
     val listener: OnRecyclerItemClick<Any>
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
@@ -38,16 +41,41 @@ class RecentProductsAdapter(
         return mList.size
     }
 
-    override fun onBindViewHolder(p0: RecyclerView.ViewHolder, p1: Int) {
+    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, pos: Int) {
+
+        val obj = mList[pos] as GroceryModel
+
+        initHolder(holder, pos, obj.name, obj.sale_price, null, obj)
     }
 
 
     inner class ProductsViewHolder(rootView: View) : RecyclerView.ViewHolder(rootView), View.OnClickListener {
 
 
+        init {
+
+
+        }
+
+
         override fun onClick(v: View?) {
 
         }
+
+
+    }
+
+
+    private fun initHolder(
+        holder: RecyclerView.ViewHolder,
+        pos: Int,
+        txt: String,
+        path: Any,
+        imgVersion: Any? = null,
+        obj: Any?
+    ) {
+
+        holder.itemView.title_pos.text = txt
 
 
     }

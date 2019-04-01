@@ -15,7 +15,15 @@ class LoginOptionsActivity : BaseActivity() {
 
         register.setOnClickListener {
 
+            finish()
             NavigationManager.start<AddressDeliveryForMapActivity>(this)
+
+        }
+
+        email_login.setOnClickListener {
+            finish()
+
+            NavigationManager.start<SignInActivity>(this)
 
         }
     }

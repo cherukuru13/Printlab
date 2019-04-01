@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:tools="http://schemas.android.com/tools"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  tools:context="com.customer.com.twohrgrocery.customer.OrderSummary">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:padding="15dp"
+                    android:text="@string/ordersum"
+                    android:textSize="16sp"
+                    android:textColor="@color/RiverBed"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/orucolor"
+                        android:layout_weight="1"/>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/DodgerBlue"
+                        android:layout_weight="1"/>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/DodgerBlue"
+                        android:layout_weight="1"/>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/CornflowerBlue"
+                        android:layout_weight="1"/>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/white"
+                        android:layout_weight="0.5"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/gradientbackground"
+                android:padding="15dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:text="@string/custname"
+                    android:textColor="#959DAD"
+                    android:layout_margin="5dp"/>
+
+            <TextView
+                    android:id="@+id/customerNameDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textviewbackground"
+                    android:inputType="textMultiLine|textVisiblePassword"
+                    android:layout_marginTop="1dp"
+                    android:textColor="#454F63"
+                    android:textSize="14sp"
+                    android:padding="10dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                <TextView
+                        android:id="@+id/os_storePickup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="@string/address"
+                        android:textColor="#959DAD"
+                        android:layout_margin="8dp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="0.5"/>
+
+                <TextView
+                        android:id="@+id/changeTo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="@string/change"
+                        android:textColor="#3497FD"
+                        android:layout_margin="8dp"/>
+
+            </LinearLayout>
+
+            <TextView
+
+                    android:id="@+id/deliveryAddressDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textviewbackground"
+                    android:inputType="textMultiLine|textVisiblePassword"
+                    android:textSize="14sp"
+                    android:textColor="#454F63"
+                    android:layout_marginTop="1dp"
+                    android:maxLines="6"
+                    android:maxLength="100"
+                    android:padding="8dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"/>
+
+            <LinearLayout
+                    android:id="@+id/layoutStorePickup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="@string/deliverydatetime"
+                        android:textColor="#959DAD"
+                        android:layout_margin="8dp"/>
+
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="0.5"/>
+
+                <TextView
+                        android:id="@+id/changesDateTimeDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="@string/change"
+                        android:textColor="#3497FD"
+                        android:layout_margin="8dp"/>
+
+            </LinearLayout>
+
+            <TextView
+
+                    android:id="@+id/DateTimeDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textviewbackground"
+                    android:inputType="textMultiLine|textVisiblePassword"
+                    android:textSize="14sp"
+                    android:textColor="#454F63"
+                    android:layout_marginTop="1dp"
+                    android:padding="10dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="@string/paymentmethod"
+                        android:textColor="#959DAD"
+                        android:layout_margin="8dp"/>
+
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="0.5"/>
+
+                <TextView
+                        android:id="@+id/changesPayment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="@string/change"
+                        android:textColor="#3497FD"
+                        android:layout_margin="8dp"/>
+
+            </LinearLayout>
+
+            <TextView
+
+                    android:id="@+id/PaymentDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textviewbackground"
+                    android:inputType="textMultiLine|textVisiblePassword"
+                    android:layout_marginTop="1dp"
+                    android:textSize="14sp"
+                    android:padding="10dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="@string/items"
+                        android:textColor="#959DAD"
+                        android:layout_margin="8dp"/>
+
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="0.5"/>
+
+                <TextView
+                        android:id="@+id/changesItems"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="@string/change"
+                        android:textColor="#3497FD"
+                        android:layout_margin="8dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#EAEEF0"
+                    android:layout_marginTop="5dp">
+
+                <android.support.v7.widget.RecyclerView
+                        android:id="@+id/list_orderSummary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:listitem="@layout/cartitemslist">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/deliveryFee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery Fee - $"
+                    android:layout_marginTop="6dp"
+                    android:textColor="#3497FD"
+                    android:textSize="14sp"
+                    android:layout_gravity="right"/>
+
+            <TextView
+                    android:id="@+id/deliveryFeeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="6dp"
+                    android:text="Add more to avoid delivery fee"
+                    android:textColor="#3497FD"
+                    android:textSize="12sp"
+                    android:textStyle="italic"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginTop="6dp"
+                    android:layout_gravity="center"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ordtotal"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="0.8"
+                        android:textColor="#454F63"
+                        android:textSize="16sp"/>
+
+                <TextView
+                        android:id="@+id/orderTotalOS"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="0.8"
+                        android:textColor="#454F63"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"/>
+            </LinearLayout>
+
+
+            <Button
+                    android:id="@+id/btn_placeOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rounded_button_cart"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:text="@string/orderplace"
+                    android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

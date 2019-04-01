@@ -26,6 +26,9 @@ class SplashActivity : BaseActivity(), DialogManager.Callback {
 
         getstarted.setOnClickListener {
 
+//            NavigationManager.start<MainActivity>(this)
+
+
             if (BaseActivity.lastInternetState == 1) {
                 NavigationManager.start<MainActivity>(this)
 

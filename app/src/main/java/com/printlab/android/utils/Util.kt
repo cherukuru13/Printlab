@@ -10,6 +10,9 @@ import android.support.v4.content.FileProvider
 import android.widget.Toast
 import java.io.File
 import java.text.DecimalFormat
+import android.util.Patterns
+
+
 
 object Util {
 
@@ -82,6 +85,32 @@ object Util {
         val activeNetworkInfo = connectivityManager?.activeNetworkInfo
         return activeNetworkInfo != null && activeNetworkInfo.isConnected
     }*/
+
+
+
+
+    fun isEmailValid(email: String): Boolean {
+        val pattern = Patterns.EMAIL_ADDRESS
+        val matcher = pattern.matcher(email)
+        return matcher.matches()
+    }
+
+    //Check password with minimum requirement here(it should be minimum 6 characters)
+    fun isPasswordValid(password: String): Boolean {
+        return password.length >= 6
+    }
+
+
+  /*  fun validateEmail() :Boolean{
+
+
+    }
+
+    fun validatePassword(): Boolean{
+
+
+    }
+*/
 
 
 }
