@@ -32,16 +32,11 @@ data class GroceryModel(
     var image: LinkedHashMap<String, String>? = null,
     var categories: LinkedHashMap<String, Boolean>? = null,
     var productVariant: @RawValue Any? = null,
-    var variant: String? = null
+    var variant: String? = null, var mProductCount: Int = 1
 ) : Parcelable {
 
 
-
-
-
 }
-
-
 
 
 //@SerializedName("Test")

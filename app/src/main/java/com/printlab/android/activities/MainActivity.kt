@@ -104,7 +104,7 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
         }
         setToggleBar()
 
-        setContainerFrag(LandingScreen(), LandingScreen.tag)
+        setContainerFrag(LandingScreen.getInstance(), LandingScreen.tag)
         setClickEvents()
     }
 
@@ -114,6 +114,14 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
         action_favorite.setOnClickListener(this)
 
     }
+
+    fun setRemoveFrag(fragment: Fragment?, tag: String? = null) {
+
+        supportFragmentManager.beginTransaction().remove(fragment!!)
+            .commit()
+
+    }
+
 
     fun setContainerFrag(fragment: Fragment?, tag: String? = null) {
 
@@ -150,6 +158,8 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
 
     }
 
+    private val fragments = supportFragmentManager
+
     override fun onSupportNavigateUp(): Boolean {
         return super.onSupportNavigateUp()
     }
@@ -158,7 +168,14 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
         if (drawer_layout.isDrawerOpen(GravityCompat.START)) {
             drawer_layout.closeDrawer(GravityCompat.START)
         } else {
-            super.onBackPressed()
+
+
+            if (fragments.backStackEntryCount > 1) {
+                fragments.popBackStack()
+            }
+
+
+//            super.onBackPressed()
         }
     }
 
@@ -227,5 +244,6 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
         }
 
     }
+
 
 }

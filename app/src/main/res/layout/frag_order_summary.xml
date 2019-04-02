@@ -80,6 +80,7 @@
                     android:background="@drawable/textviewbackground"
                     android:inputType="textMultiLine|textVisiblePassword"
                     android:layout_marginTop="1dp"
+                    android:text="Cherukuri Prasad"
                     android:textColor="#454F63"
                     android:textSize="14sp"
                     android:padding="10dp"/>
@@ -130,6 +131,7 @@
                     android:inputType="textMultiLine|textVisiblePassword"
                     android:textSize="14sp"
                     android:textColor="#454F63"
+                    android:text="s2 ganaga apartment,Radhanagar Main Road, chrompet, chennai 600014"
                     android:layout_marginTop="1dp"
                     android:maxLines="6"
                     android:maxLength="100"
@@ -181,6 +183,7 @@
                     android:background="@drawable/textviewbackground"
                     android:inputType="textMultiLine|textVisiblePassword"
                     android:textSize="14sp"
+                    android:text="01-04-2019"
                     android:textColor="#454F63"
                     android:layout_marginTop="1dp"
                     android:padding="10dp"/>
@@ -223,13 +226,13 @@
             </LinearLayout>
 
             <TextView
-
                     android:id="@+id/PaymentDetails"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/textviewbackground"
                     android:inputType="textMultiLine|textVisiblePassword"
                     android:layout_marginTop="1dp"
+                    android:text="Credit Card"
                     android:textSize="14sp"
                     android:padding="10dp"/>
 
@@ -291,7 +294,7 @@
                     android:id="@+id/deliveryFee"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Delivery Fee - $"
+                    android:text="Delivery Fee -  1 rs"
                     android:layout_marginTop="6dp"
                     android:textColor="#3497FD"
                     android:textSize="14sp"
@@ -341,12 +344,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
+                        android:text="198 rs"
                         android:layout_weight="0.8"
                         android:textColor="#454F63"
                         android:textSize="16sp"
                         android:layout_gravity="center"/>
             </LinearLayout>
-
 
             <Button
                     android:id="@+id/btn_placeOrder"

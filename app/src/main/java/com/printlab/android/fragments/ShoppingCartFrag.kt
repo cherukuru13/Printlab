@@ -130,7 +130,6 @@ class ShoppingCartFrag : BaseFragment(), View.OnClickListener, OnRecyclerItemCli
 
     }
 
-    var productCount = 0
     override fun onItemClick(pos: Int, viewId: Int, t: Any) {
 
         val mObj = t as GroceryModel
@@ -138,22 +137,15 @@ class ShoppingCartFrag : BaseFragment(), View.OnClickListener, OnRecyclerItemCli
 
             R.id.sub -> {
 
-                if (productCount > 1)
-                    productCount -= 1
-
-                mTotalPrice -= (productCount * mObj.sale_price)
+                mTotalPrice -= (mObj.mProductCount * mObj.sale_price)
                 rootView!!.checkout.text = "Check Out Price $mTotalPrice"
-                // }
 
 
             }
 
             R.id.add -> {
 
-                productCount += 1
-
-
-                mTotalPrice += (productCount * mObj.sale_price)
+                mTotalPrice += (mObj.mProductCount * mObj.sale_price)
                 rootView!!.checkout.text = "Check Out Price $mTotalPrice"
             }
 

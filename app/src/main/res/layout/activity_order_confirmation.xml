@@ -130,13 +130,13 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"
-
                 android:text="@string/est"/>
 
         <TextView
                 android:id="@+id/dateTime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="04-04-2019"
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"/>
         <TextView
@@ -145,7 +145,6 @@
                 android:layout_marginTop="5dp"/>
 
         <Button
-
                 android:id="@+id/btn_orderConfirm"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

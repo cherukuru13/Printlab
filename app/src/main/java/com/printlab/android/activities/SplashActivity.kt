@@ -28,15 +28,14 @@ class SplashActivity : BaseActivity(), DialogManager.Callback {
 
 //            NavigationManager.start<MainActivity>(this)
 
-
-            if (BaseActivity.lastInternetState == 1) {
+//            if (BaseActivity.lastInternetState == 1) {
                 NavigationManager.start<MainActivity>(this)
 
-            } else {
-                NavigationManager.start<LoginOptionsActivity>(this)
-
-//                DialogManager.dialog(this, "SETTINGS", "Enable Mobile or Wifi Data! Go to settings menu?", this)
-            }
+//            } else {
+//                NavigationManager.start<LoginOptionsActivity>(this)
+//
+////                DialogManager.dialog(this, "SETTINGS", "Enable Mobile or Wifi Data! Go to settings menu?", this)
+//            }
         }
     }
 

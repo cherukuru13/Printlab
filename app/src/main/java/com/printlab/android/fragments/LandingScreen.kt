@@ -19,10 +19,24 @@ import kotlinx.android.synthetic.main.frag_landing_screen.view.*
 
 class LandingScreen : BaseFragment(), View.OnClickListener, OnRecyclerItemClick<Any> {
 
+
+
     companion object {
 
+        var mInstance: LandingScreen? = null
         const val tag = "LandingScreen"
+
+        fun getInstance(): LandingScreen {
+
+            if (mInstance == null) {
+
+                return LandingScreen()
+            }
+            return mInstance!!
+        }
+
     }
+
 
 
     override fun onItemClick(pos: Int, viewId: Int, t: Any) {

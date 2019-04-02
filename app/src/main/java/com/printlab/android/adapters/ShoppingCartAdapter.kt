@@ -71,25 +71,34 @@ class ShoppingCartAdapter(
         viewHolder.itemView.brand.text = obj.brand
         viewHolder.itemView.price.text = obj.sale_price.toString()
         viewHolder.itemView.unit.text = "1 kg"
+        viewHolder.itemView.cart_count.text = "1"
+
 
         var mCountTxt = (viewHolder.itemView.cart_count.text.toString())
         var mCount = mCountTxt.toInt()
 
         viewHolder.itemView.add.setOnClickListener {
 
+            mCount += 1
+
+            obj.mProductCount = mCount
             listener.onItemClick(pos, R.id.add, obj)
 
-            mCount += 1
             viewHolder.itemView.cart_count.text = "$mCount"
             viewHolder.itemView.price.text = "${obj.sale_price * mCount}"//(obj.sale_price * mCount).toString()
             viewHolder.itemView.unit.text = "$mCount kg"
+
+
         }
 
         viewHolder.itemView.sub.setOnClickListener {
-            if (mCount > 1)
+            if (mCount > 1) {
                 mCount -= 1
+                obj.mProductCount = mCount
+                listener.onItemClick(pos, R.id.sub, obj)
+            }
 
-            listener.onItemClick(pos, R.id.sub, obj)
+
             viewHolder.itemView.cart_count.text = "$mCount"
             viewHolder.itemView.price.text = "${obj.sale_price * mCount}"
             viewHolder.itemView.unit.text = "$mCount kg"

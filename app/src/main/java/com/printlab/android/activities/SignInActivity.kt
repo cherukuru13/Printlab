@@ -118,12 +118,10 @@ class SignInActivity : BaseActivity(), CustomEditText.KeyboardListener, View.OnC
 
         if (PrefsManager.exists(this, AppConstants.UserDetails.USER_NAME)) {
 
-
             if (PrefsManager.exists(this, "$email${AppConstants.UserDetails.PASSWORD}")) {
 
                 return true
             }
-
 
         } else {
 
@@ -132,11 +130,6 @@ class SignInActivity : BaseActivity(), CustomEditText.KeyboardListener, View.OnC
 
 
         }
-
-
-
-
-
         return true
     }
 

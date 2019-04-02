@@ -52,6 +52,8 @@
 
         <activity android:name=".activities.FacebookSuccessActivity"/>
 
+        <activity android:name=".activities.OrderConfirmationActivity"/>
+
 
     </application>
 
